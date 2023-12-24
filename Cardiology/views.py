@@ -13,6 +13,7 @@ def List(request):
             })
     return JsonResponse(cardio_doctor_list, safe=False)
 
+
 def List_html(request):
     doctors = doctor.objects.all()
     doctors_list = []
